@@ -1,3 +1,23 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def student(request):
+    return HttpResponse(
+        """
+        <h2>
+            welcome to student
+        </h2>
+
+"""
+    )
+
+
+def goodbye(request):
+    return HttpResponse(
+        """
+        <h2>
+           goodbye
+        </h2>
+
+"""
+    )
